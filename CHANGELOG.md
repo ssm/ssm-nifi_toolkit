@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 0.1.0
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-**Features**
-
-**Bugfixes**
-
-**Known Issues**
+## [0.1.0] - 2020-01-21
+### Added
+- Initial release.
+- Download, install and start Apache NiFi Toolkit.
