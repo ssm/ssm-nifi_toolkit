@@ -14,19 +14,22 @@
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7", "8"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "7", "8"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "9", "10"
+        "9",
+        "10"
       ]
     },
     {
