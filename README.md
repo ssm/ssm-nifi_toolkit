@@ -72,9 +72,6 @@ become confused.
 This module is under development, and therefore somewhat light on
 functionality.
 
-Configuration and repository directories are not managed yet. These
-can be managed outside the module with `file` resources.
-
 ## Development
 
 In the Development section, tell other users the ground rules for
