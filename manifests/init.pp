@@ -58,6 +58,19 @@ class nifi_toolkit (
     mode   => '0755',
   }
 
+  file { "${install_root}/current":
+    ensure => link,
+    target => $software_directory,
+  }
+
+  file { '/usr/local/bin/nifi-cli':
+    ensure => file,
+    owner => 'root',
+    group => 'root',
+    mode => '0755',
+    source => 'puppet:///modules/nifi_toolkit/nifi-cli',
+  }
+
   exec { "permissions for ${software_directory}":
     path        => ['/usr/bin'],
     command     => "chown -Rh root: ${software_directory}",

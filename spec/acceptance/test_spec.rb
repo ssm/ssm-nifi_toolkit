@@ -13,4 +13,16 @@ describe 'NiFi Toolkit' do
   describe file('/opt/nifi-toolkit') do
     it { is_expected.to be_directory }
   end
+
+  describe file('/opt/nifi-toolkit/current/conf') do
+    it { is_expected.to be_directory }
+  end
+
+  describe file('/usr/local/bin/nifi-cli') do
+    it { is_expected.to be_file }
+  end
+
+  describe command('nifi-cli session show') do
+    its(:exit_status) { is_expected.to be 0 }
+  end
 end
