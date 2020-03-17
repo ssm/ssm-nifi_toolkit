@@ -65,9 +65,9 @@ class nifi_toolkit (
 
   file { '/usr/local/bin/nifi-cli':
     ensure => file,
-    owner => 'root',
-    group => 'root',
-    mode => '0755',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0755',
     source => 'puppet:///modules/nifi_toolkit/nifi-cli',
   }
 
