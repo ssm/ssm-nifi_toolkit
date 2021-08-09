@@ -28,8 +28,7 @@ The tarball will be unpacked to `/opt/nifi-toolkit` by default.
 
 ### Setup Requirements
 
-NiFi requires Java Runtime Environment. Nifi 1.10.1 runs on Java 8 or
-Java 11.
+NiFi requires Java Runtime Environment. Nifi 1.14.0 runs on Java 8 or Java 11.
 
 When installing on local infrastructure, consider download the
 distribution tarballs, validate them with the Apache distribution
@@ -59,7 +58,7 @@ To host the file locally, add a nifi_toolkit::download_url variable for the
 module.
 
 ```yaml
-nifi_toolkit::download_url: "http://repo.local/nifi/1.10.0/nifi-toolkit-1.10.0-bin.tar.gz"
+nifi_toolkit::download_url: "http://repo.example.com/nifi/1.14.0/nifi-toolkit-1.14.0-bin.tar.gz"
 ```
 
 Please keep `nifi_toolkit::download_url`,
