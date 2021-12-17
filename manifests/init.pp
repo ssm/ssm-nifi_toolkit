@@ -29,9 +29,9 @@
 #   }
 #
 class nifi_toolkit (
-  String $version = '1.14.0',
-  String $download_url = 'http://mirrors.ibiblio.org/apache/nifi/1.14.0/nifi-toolkit-1.14.0-bin.tar.gz',
-  String $download_checksum = '1c250bfe005f3f05b7bfbe0e5b60a2f9845940309b2c08f52208c1e9c4f9870b',
+  String $version = '1.15.1',
+  String $download_url = 'https://dlcdn.apache.org/nifi/1.15.1/nifi-toolkit-1.15.1-bin.tar.gz',
+  String $download_checksum = '1940f64a5e40f08336260c7043226b2124289717b1bc88d960e27b1a2ab2c022',
   String $download_checksum_type = 'sha256',
   Stdlib::Absolutepath $download_tmp_dir = '/var/tmp',
   Stdlib::Absolutepath $install_root = '/opt/nifi-toolkit',
