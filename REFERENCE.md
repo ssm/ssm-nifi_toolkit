@@ -48,7 +48,7 @@ Data type: `String`
 The version of Apache NiFi Toolkit. This must match the version in
 the tarball.
 
-Default value: `'1.15.1'`
+Default value: `'1.15.3'`
 
 ##### <a name="download_url"></a>`download_url`
 
@@ -56,7 +56,7 @@ Data type: `String`
 
 Where to download the binary installation tarball from.
 
-Default value: `'https://dlcdn.apache.org/nifi/1.15.1/nifi-toolkit-1.15.1-bin.tar.gz'`
+Default value: `"https://dlcdn.apache.org/nifi/${version}/nifi-toolkit-${version}-bin.tar.gz"`
 
 ##### <a name="download_checksum"></a>`download_checksum`
 
@@ -65,7 +65,7 @@ Data type: `String`
 The expected checksum of the downloaded tarball. This is used for
 verifying the integrity of the downloaded tarball.
 
-Default value: `'1940f64a5e40f08336260c7043226b2124289717b1bc88d960e27b1a2ab2c022'`
+Default value: `'820ab1d188b92bff41aaf06180d32c99c3849d5c79cd781f1785797f2ac23548'`
 
 ##### <a name="download_checksum_type"></a>`download_checksum_type`
 
