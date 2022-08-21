@@ -35,6 +35,7 @@ class { 'nifi_toolkit':
 The following parameters are available in the `nifi_toolkit` class:
 
 * [`version`](#version)
+* [`download_archive_type`](#download_archive_type)
 * [`download_url`](#download_url)
 * [`download_checksum`](#download_checksum)
 * [`download_checksum_type`](#download_checksum_type)
@@ -50,13 +51,22 @@ the tarball.
 
 Default value: `'1.15.3'`
 
+##### <a name="download_archive_type"></a>`download_archive_type`
+
+Data type: `Enum['zip','tar.gz']`
+
+The archive type of the downloaded tarball. The default "zip" requires
+that the command "unzip" is present on the system.
+
+Default value: `'zip'`
+
 ##### <a name="download_url"></a>`download_url`
 
 Data type: `String`
 
 Where to download the binary installation tarball from.
 
-Default value: `"https://dlcdn.apache.org/nifi/${version}/nifi-toolkit-${version}-bin.tar.gz"`
+Default value: `"https://dlcdn.apache.org/nifi/${version}/nifi-toolkit-${version}-bin.${download_archive_type}"`
 
 ##### <a name="download_checksum"></a>`download_checksum`
 

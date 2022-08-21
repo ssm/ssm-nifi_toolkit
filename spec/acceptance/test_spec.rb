@@ -4,6 +4,9 @@ pp_defaults = <<-PUPPETCODE
   class { 'java': }
   class { 'nifi_toolkit': }
 
+  package { 'unzip': before => Class['nifi_toolkit']}
+  package { 'coreutils': before => Class['nifi_toolkit']}
+
   Class['java'] -> Class['nifi_toolkit']
 PUPPETCODE
 
