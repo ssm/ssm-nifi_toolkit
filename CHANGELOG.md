@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Install NiFi toolkit version `1.16.1` by default
+- This module now downloads NiFi as a "zip" archive instead of "tar.gz", and
+  requires the "unzip" package to be present.
+- Install NiFi toolkit version 1.18.0 by default.
+- Declare support for Ubuntu 22.04 LTS (Jammy Jellyfish)
+- Declare support for RHEL 9
 
 ## [0.4.1] - 2022-01-19
 
