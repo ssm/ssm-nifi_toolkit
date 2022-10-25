@@ -75,7 +75,7 @@ class nifi_toolkit (
   }
 
   exec { "permissions for ${software_directory}":
-    path        => ['/usr/bin', '/usr/sbin'],
+    path        => ['/usr/bin', '/usr/sbin', '/bin', '/sbin'],
     command     => "chown -Rh root: ${software_directory}",
     refreshonly => true,
     subscribe   => Archive[$local_archive_file],
