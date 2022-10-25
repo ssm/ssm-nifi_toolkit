@@ -49,14 +49,13 @@ Data type: `String`
 The version of Apache NiFi Toolkit. This must match the version in
 the tarball.
 
-Default value: `'1.15.3'`
+Default value: `'1.18.0'`
 
 ##### <a name="download_archive_type"></a>`download_archive_type`
 
 Data type: `Enum['zip','tar.gz']`
 
-The archive type of the downloaded tarball. The default "zip" requires
-that the command "unzip" is present on the system.
+The archive type of the downloaded tarball.
 
 Default value: `'zip'`
 
@@ -75,7 +74,7 @@ Data type: `String`
 The expected checksum of the downloaded tarball. This is used for
 verifying the integrity of the downloaded tarball.
 
-Default value: `'820ab1d188b92bff41aaf06180d32c99c3849d5c79cd781f1785797f2ac23548'`
+Default value: `'a72ba691feac5c6b9d95b200c2982e431a1b8e7850d36d478fc743ec0cdbb479'`
 
 ##### <a name="download_checksum_type"></a>`download_checksum_type`
 
