@@ -34,15 +34,15 @@ class { 'nifi_toolkit':
 
 The following parameters are available in the `nifi_toolkit` class:
 
-* [`version`](#version)
-* [`download_archive_type`](#download_archive_type)
-* [`download_url`](#download_url)
-* [`download_checksum`](#download_checksum)
-* [`download_checksum_type`](#download_checksum_type)
-* [`install_root`](#install_root)
-* [`download_tmp_dir`](#download_tmp_dir)
+* [`version`](#-nifi_toolkit--version)
+* [`download_archive_type`](#-nifi_toolkit--download_archive_type)
+* [`download_url`](#-nifi_toolkit--download_url)
+* [`download_checksum`](#-nifi_toolkit--download_checksum)
+* [`download_checksum_type`](#-nifi_toolkit--download_checksum_type)
+* [`install_root`](#-nifi_toolkit--install_root)
+* [`download_tmp_dir`](#-nifi_toolkit--download_tmp_dir)
 
-##### <a name="version"></a>`version`
+##### <a name="-nifi_toolkit--version"></a>`version`
 
 Data type: `String`
 
@@ -51,7 +51,7 @@ the tarball.
 
 Default value: `'1.18.0'`
 
-##### <a name="download_archive_type"></a>`download_archive_type`
+##### <a name="-nifi_toolkit--download_archive_type"></a>`download_archive_type`
 
 Data type: `Enum['zip','tar.gz']`
 
@@ -59,7 +59,7 @@ The archive type of the downloaded tarball.
 
 Default value: `'zip'`
 
-##### <a name="download_url"></a>`download_url`
+##### <a name="-nifi_toolkit--download_url"></a>`download_url`
 
 Data type: `String`
 
@@ -67,7 +67,7 @@ Where to download the binary installation tarball from.
 
 Default value: `"https://dlcdn.apache.org/nifi/${version}/nifi-toolkit-${version}-bin.${download_archive_type}"`
 
-##### <a name="download_checksum"></a>`download_checksum`
+##### <a name="-nifi_toolkit--download_checksum"></a>`download_checksum`
 
 Data type: `String`
 
@@ -76,7 +76,7 @@ verifying the integrity of the downloaded tarball.
 
 Default value: `'a72ba691feac5c6b9d95b200c2982e431a1b8e7850d36d478fc743ec0cdbb479'`
 
-##### <a name="download_checksum_type"></a>`download_checksum_type`
+##### <a name="-nifi_toolkit--download_checksum_type"></a>`download_checksum_type`
 
 Data type: `String`
 
@@ -85,7 +85,7 @@ verifying the integrity of the downloaded tarball.
 
 Default value: `'sha256'`
 
-##### <a name="install_root"></a>`install_root`
+##### <a name="-nifi_toolkit--install_root"></a>`install_root`
 
 Data type: `Stdlib::Absolutepath`
 
@@ -93,7 +93,7 @@ The root directory of the nifi toolkit installation.
 
 Default value: `'/opt/nifi-toolkit'`
 
-##### <a name="download_tmp_dir"></a>`download_tmp_dir`
+##### <a name="-nifi_toolkit--download_tmp_dir"></a>`download_tmp_dir`
 
 Data type: `Stdlib::Absolutepath`
 
